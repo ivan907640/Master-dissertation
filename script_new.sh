@@ -1,0 +1,3 @@
+#! /bin/bash
+python train_new.py --dataset=SVHN --log_file_name=SVHN_10_new_weight3 --model=simple-cnn --unsup_num=9 --batch_size=64 --lambda_u=0.02 --opt=sgd --base_lr=0.03 --unsup_lr=0.021 --max_grad_norm=5  --from_labeled  --rounds=100  --meta_round=3  --meta_client_num=5  --w_mul_times=3  --sup_scale=100  --dist_scale=1e4 --gpu 0
+python train_new.py --dataset=SVHN --log_file_name=SVHN_30_new_weight5 --model=simple-cnn --unsup_num=9 --batch_size=64 --lambda_u=0.02 --opt=sgd --base_lr=0.03 --unsup_lr=0.021 --max_grad_norm=5  --from_labeled  --rounds=100  --meta_round=3  --meta_client_num=5  --w_mul_times=5  --sup_scale=100  --dist_scale=1e4 --gpu 0
